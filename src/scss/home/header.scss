@@ -1,0 +1,19 @@
+.header {
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 80px;
+    }
+    &__left,
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    &__left {
+        column-gap: 100px;
+    }
+    &__right {
+        column-gap: 60px;
+    }
+}
