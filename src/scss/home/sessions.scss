@@ -1,0 +1,9 @@
+.sessions {
+    display: flex;
+    align-items: center;
+
+    &__body {
+        display: flex;
+        width: 100%;
+    }
+}

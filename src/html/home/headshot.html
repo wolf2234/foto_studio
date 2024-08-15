@@ -8,9 +8,10 @@
             </h2>
             <span class="headshot__subtitle">#1 Rated Headshot Photographers.</span>
             <div class="headshot__button">
-                <div class="button">
-                    <a href="#" class="button__link">Browse Sessions</a>
-                </div>
+                @@include('button.html', {
+                "text": "Browse Sessions",
+                "modifier": "button__link_padding"
+                })
             </div>
         </div>
     </div>

@@ -1,0 +1,44 @@
+.session {
+    display: inline-block;
+    background-color: transparent;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        display: inline-block;
+        border: 1px solid red;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        counter-reset: item;
+    }
+
+    &__item {
+        width: 100%;
+        border: 1px solid red;
+        padding: 0px 0px 0px 0px;
+
+        &::before {
+            border: 1px solid red;
+            display: inline-block;
+            content: counter(item);
+            counter-increment: item;
+            color: #4e4e4e;
+            font-size: 60px;
+            font-weight: 900;
+        }
+    }
+}

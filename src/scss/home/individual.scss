@@ -1,0 +1,21 @@
+.individual {
+    width: 50%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // &__body {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    // }
+
+    // &__title {
+    //     font-size: 25px;
+    //     text-transform: uppercase;
+    // }
+}
