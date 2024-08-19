@@ -1,7 +1,7 @@
 .button {
     &__link {
         display: inline-block;
-        padding: 10px 20px;
+        padding: 10px 25px;
         border-radius: 3px;
         background-color: #ff3c2d;
         color: #fff;
@@ -11,8 +11,10 @@
         text-align: center;
     }
 
-    &__link_padding {
+    &__large_padding {
+        padding: 10px 50px;
+    }
+    &__medium_padding {
         padding: 10px 30px;
-        min-width: 180px;
     }
 }

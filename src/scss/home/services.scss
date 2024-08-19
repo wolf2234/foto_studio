@@ -1,0 +1,16 @@
+.services {
+    &__body {
+    }
+    &__items {
+        display: flex;
+        column-gap: 30px;
+        justify-content: center;
+    }
+    &__item {
+        display: flex;
+    }
+    &__title {
+        font-size: 30px;
+        text-align: center;
+    }
+}
