@@ -1,13 +1,17 @@
 .gallery {
-    display: flex;
+    display: none;
     padding: 50px 150px;
     column-gap: 0px;
     width: 100%;
 
+    &.active {
+        display: flex;
+    }
+
     &__img {
         width: 50%;
         height: 100%;
-        margin-left: -35px;
+        margin-left: 0px;
     }
     &__image {
         width: 100%;

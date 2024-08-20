@@ -90,7 +90,6 @@ export function clickPhoto() {
             let mainPhoto = parentImage.querySelector(
                 "[data-main-image] > img"
             );
-            console.log(mainPhoto);
             photos.forEach(function (photo) {
                 photo.addEventListener("click", function () {
                     mainPhoto.removeAttribute("src");

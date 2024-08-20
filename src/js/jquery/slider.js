@@ -6,5 +6,7 @@ $(document).ready(function () {
         Infinity: true,
         autoplay: true,
         autoplaySpeed: 2000,
+        nextArrow: $("#next"),
+        prevArrow: $("#prev"),
     });
 });

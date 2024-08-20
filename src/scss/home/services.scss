@@ -1,7 +1,9 @@
 .services {
+    padding: 70px 0px 30px;
     &__body {
     }
     &__items {
+        margin: 40px 0px 5px;
         display: flex;
         column-gap: 30px;
         justify-content: center;
@@ -10,7 +12,14 @@
         display: flex;
     }
     &__title {
-        font-size: 30px;
+        font-size: 40px;
+        font-weight: 600;
         text-align: center;
+    }
+    &__link {
+        color: #ababab;
+        &.active {
+            color: #000;
+        }
     }
 }
