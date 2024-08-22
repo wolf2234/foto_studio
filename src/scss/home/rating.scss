@@ -1,0 +1,56 @@
+.rating {
+    position: relative;
+    font-size: 21px;
+    display: inline-block;
+    width: 18%;
+
+    &::before {
+        content: "★★★★★";
+        opacity: 0;
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    &__items {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -30px;
+        left: 0px;
+        display: flex;
+        flex-direction: row-reverse;
+        z-index: 3;
+    }
+    &__item {
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        opacity: 0px;
+        visibility: hidden;
+        top: 0px;
+        left: 0px;
+
+        &:checked,
+        &:checked ~ .rating__label {
+            color: #ffd300;
+        }
+    }
+    &__label {
+        flex: 0 0 20%;
+        top: 0px;
+        cursor: pointer;
+        color: #ff3c2d;
+
+        &::before {
+            content: "★";
+            display: block;
+            transition: color 0.3s ease 0s;
+        }
+        &:hover,
+        &:hover ~ &,
+        &:checked ~ &:hover {
+            color: #ffd300;
+        }
+    }
+}
