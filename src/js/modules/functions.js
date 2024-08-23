@@ -99,3 +99,30 @@ export function clickPhoto() {
         });
     });
 }
+
+export function getPosts() {
+    let posts = document.querySelectorAll("[data-posts]");
+    posts.forEach(function (post) {
+        showPosts(post);
+    });
+}
+
+function showPosts(post) {
+    let buttonLoad = post.querySelector("[data-posts-btn]");
+    let currentItems = 3;
+    // let postLength = post.querySelectorAll(".post__item").length;
+    buttonLoad.addEventListener("click", function (e) {
+        let elementList = [...post.querySelectorAll("[data-post]")];
+        for (let i = currentItems; i < currentItems + 3; i++) {
+            if (elementList[i]) {
+                setTimeout(function () {
+                    elementList[i].style.display = "flex";
+                });
+            }
+        }
+        currentItems += 3;
+        if (currentItems >= elementList.length) {
+            buttonLoad.classList.add("hide");
+        }
+    });
+}

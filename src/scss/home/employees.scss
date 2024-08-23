@@ -18,6 +18,8 @@
     }
     &__block {
         display: inline-block;
+        img {
+        }
     }
 
     &__body {
@@ -34,6 +36,7 @@
         font-size: 14px;
     }
     &__description {
+        align-self: flex-start;
         line-height: 4.3;
     }
     &__row {

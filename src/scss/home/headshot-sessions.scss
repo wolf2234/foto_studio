@@ -1,0 +1,23 @@
+.headshot-sessions {
+    position: relative;
+    background-image: url("../../img/main/headshot/fon-img.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 20px 15px;
+    z-index: 3;
+
+    &::before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-size: 100% 100%;
+    }
+
+    &__body {
+        border: 1px solid rgb(255, 250, 250);
+    }
+}

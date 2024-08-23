@@ -1,0 +1,17 @@
+.photo-sessions {
+    position: relative;
+    padding: 100px 0px;
+    z-index: 4;
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 40px;
+        width: 40%;
+    }
+}

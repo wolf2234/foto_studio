@@ -6,6 +6,8 @@ import "./jquery/slick.min.js";
 import "./jquery/slider.js";
 import { showBlock } from "./modules/functions.js";
 import { clickPhoto } from "./modules/functions.js";
+import { getPosts } from "./modules/functions.js";
 
 showBlock(1);
 clickPhoto();
+getPosts();

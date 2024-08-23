@@ -9,6 +9,12 @@
         font-weight: 500;
         line-height: 1;
         text-align: center;
+
+        &.hide {
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s all ease;
+        }
     }
 
     &__large_padding {
