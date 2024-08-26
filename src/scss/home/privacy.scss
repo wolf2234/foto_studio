@@ -1,0 +1,10 @@
+.privacy {
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+    }
+    &__text {
+        color: #626262;
+    }
+}

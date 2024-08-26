@@ -1,0 +1,21 @@
+.contact {
+    &__body {
+    }
+    &__title {
+        color: #626262;
+        font-size: 18px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        font-size: 25px;
+        padding: 25px 0px 0px 0px;
+    }
+    &__phone {
+    }
+    &__email {
+        padding: 0px 0px 8px 0px;
+        border-bottom: 1px solid #ff3c2d;
+    }
+}
