@@ -1,12 +1,8 @@
 .gallery {
-    display: none;
+    display: flex;
     padding: 50px 150px;
     column-gap: 0px;
     width: 100%;
-
-    &.active {
-        display: flex;
-    }
 
     &__img {
         width: 50%;

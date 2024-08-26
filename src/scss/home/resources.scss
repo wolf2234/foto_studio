@@ -20,6 +20,7 @@
         align-items: center;
         // border: 1px solid red;
         color: #fff;
+
         &::before {
             content: "";
             display: inline-block;
@@ -30,6 +31,7 @@
             width: 30px;
             height: 30px;
         }
+        
         &:hover::before {
             background-position: 5px;
             transition: 0.5s;

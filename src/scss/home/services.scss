@@ -22,4 +22,10 @@
             color: #000;
         }
     }
+    &__gallery {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
 }

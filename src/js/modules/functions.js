@@ -13,7 +13,6 @@ export function showBlock(defaultValue = 0) {
 
         // Get all items with data-block-item attribute.
         const childblocks = parentElement.querySelectorAll("[data-block-item]");
-
         if (defaultValue) {
             addActiveByDefault(childlinks, defaultValue);
             addActiveByDefault(childblocks, defaultValue);
