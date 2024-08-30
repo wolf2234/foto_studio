@@ -4,12 +4,13 @@
 
 .slick-track {
     display: flex;
+    min-width: 0px;
     align-items: flex-start;
 }
 
 .employees {
     position: relative;
-    padding: 80px 0px 110px;
+    padding: 80px 0px 150px;
     width: 100%;
     height: 100%;
     z-index: 3;
@@ -77,6 +78,7 @@
     .slick-dots {
         position: absolute;
         width: 100%;
+        bottom: 8%;
         display: flex;
         align-items: center;
         justify-content: center;
