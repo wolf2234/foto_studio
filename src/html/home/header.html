@@ -24,6 +24,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="header__mobile-right">
+                    <div class="header__items">
+                        <div class="header__item">
+                            @@include('button.html', {
+                            "text": "Book Now",
+                            "modifier": "button__full_width"
+                            })
+                        </div>
+                        <div class="header__item">
+                            @@include('social.html', {})
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="header__right">
@@ -34,27 +47,9 @@
                 })
             </div>
             <div class="header__links">
-                <div class="social">
-                    <div class="social__links">
-                        <a href="" class="social__link">
-                            <img src="../../img/header/Fb.png" alt="" class="social__icon">
-                        </a>
-                        <a href="" class="social__link">
-                            <img src="../../img/header/In.png" alt="" class="social__icon">
-                        </a>
-                        <a href="" class="social__link">
-                            <img src="../../img/header/Li.png" alt="" class="social__icon">
-                        </a>
-                        <a href="" class="social__link">
-                            <img src="../../img/header/Yp.png" alt="" class="social__icon">
-                        </a>
-                        <a href="" class="social__link">
-                            <img src="../../img/header/Ggle.png" alt="" class="social__icon">
-                        </a>
-                    </div>
-                </div>
+                @@include('social.html', {})
             </div>
-            @@include('../components/burger.html', {})
         </div>
+        @@include('../components/burger.html', {})
     </div>
 </header>

@@ -15,6 +15,7 @@
             left: 0px;
             top: 9px;
             width: 100%;
+            min-width: 30px;
             height: 2px;
             transition: all 0.3s ease 0s;
         }
@@ -26,6 +27,7 @@
             background-color: #000;
             position: absolute;
             width: 100%;
+            min-width: 30px;
             height: 2px;
             left: 0px;
             transition: all 0.3s ease 0s;

@@ -34,6 +34,7 @@
         padding: 15px 80px;
         @media (max-width: 768px) {
             height: 50px;
+            padding: 15px 30px;
         }
     }
     &__left,
@@ -42,15 +43,40 @@
         align-items: center;
         z-index: 2;
     }
+    &__mobile-right {
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+    &__items {
+        display: flex;
+        gap: 20px 60px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            padding: 0px 10px;
+        }
+    }
+    &__item {
+        @media (max-width: 768px) {
+            margin: 0px 0px 20px 0px;
+        }
+    }
     &__left {
         column-gap: 100px;
     }
     &__right {
         column-gap: 60px;
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
     &__menu {
         transition: all 0.3s ease 0s;
         @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             position: fixed;
             top: -100%;
             left: 0px;
@@ -58,6 +84,7 @@
             height: 100%;
             overflow: auto;
             background-color: #fff;
+            padding: 0px 20px;
 
             &.active {
                 top: 0px;

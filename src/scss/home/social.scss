@@ -1,4 +1,8 @@
 .social {
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
     &__links {
         display: flex;
         align-items: center;
