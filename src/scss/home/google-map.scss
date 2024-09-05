@@ -11,32 +11,10 @@
     }
 
     &__search {
-        position: absolute;
-        top: 130px;
-        left: 350px;
-        display: flex;
-        padding: 2% 12% 2% 2%;
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: #fff;
-    }
+        display: block;
 
-    &__field {
-        display: flex;
-    }
-
-    &__input {
-        background-color: #f6f6f6;
-    }
-
-    &__title {
-        font-size: 38px;
-        font-weight: 500;
-        margin-bottom: 20px;
-    }
-
-    &__text {
-        font-size: 14px;
-        margin-bottom: 25px;
+        @media (max-width: 1025px) {
+            display: none;
+        }
     }
 }

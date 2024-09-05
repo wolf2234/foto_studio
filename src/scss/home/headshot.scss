@@ -66,6 +66,10 @@
         @media (max-width: 470px) {
             top: 15%;
             line-height: 1.8;
+            width: 55%;
+        }
+        @media (max-width: 400px) {
+            top: 10%;
             width: 63%;
         }
     }
@@ -81,7 +85,7 @@
             font-size: 18px;
         }
         @media (max-width: 470px) {
-            font-size: 15;
+            font-size: 15px;
         }
     }
     &__subtitle {
@@ -97,7 +101,7 @@
             font-size: 13px;
         }
         @media (max-width: 470px) {
-            font-size: 10;
+            font-size: 11px;
         }
     }
     &__button {
