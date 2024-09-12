@@ -149,6 +149,9 @@
         @media (max-width: 720px) {
             width: 48%;
         }
+        @media (max-width: 550px) {
+            max-height: 35px;
+        }
     }
     .slick-arrow.slick-next {
         width: 47%;
@@ -165,6 +168,9 @@
         }
         @media (max-width: 720px) {
             width: 48%;
+        }
+        @media (max-width: 550px) {
+            max-height: 35px;
         }
     }
 }
