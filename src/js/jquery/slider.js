@@ -8,6 +8,8 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         nextArrow: $("#next"),
         prevArrow: $("#prev"),
+        draggable: false,
+        swipe: false,
     });
     $(".employees__items").slick({
         arrows: false,
