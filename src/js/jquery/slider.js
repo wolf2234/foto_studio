@@ -11,14 +11,26 @@ $(document).ready(function () {
         draggable: false,
         swipe: false,
     });
-    $(".employees__items").slick({
+    $(".employees__slider").slick({
         arrows: false,
-        dots: true,
         slidesToShow: 3,
         slidesToScroll: 3,
+        dots: true,
         adaptiveHeight: true,
-        Infinity: false,
-        autoplay: false,
+        Infinity: true,
+        autoplay: true,
         autoplaySpeed: 2000,
+        appendDots: $(".employees__dots"),
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    vertical: true,
+                    verticalSwiping: true,
+                },
+            },
+        ],
     });
 });

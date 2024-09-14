@@ -1,34 +1,19 @@
 .employees {
-    position: relative;
-    padding: 80px 0px 150px;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-
-    .slick-list {
-        overflow: hidden;
-    }
-
-    .slick-track {
-        display: flex;
-        min-width: 0px;
-        align-items: flex-start;
-    }
-
-    &__item {
-    }
-    &__block {
-        display: inline-block;
-        img {
-        }
-    }
-
     &__body {
+        width: 100%;
+        display: block;
+        padding: 50px 0px;
+        @media (max-width: 768px) {
+            padding: 30px 15px 0px 15px;
+        }
+        @media (max-width: 500px) {
+            padding: 20px 0px 0px 0px;
+        }
     }
     &__head {
         text-align: center;
         line-height: 1.7;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
     &__title {
         font-size: 36px;
@@ -36,28 +21,154 @@
     &__subtext {
         font-size: 14px;
     }
-    &__description {
-        align-self: flex-start;
-        line-height: 4.3;
+    &__wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    &__dots {
+        .slick-dots {
+            position: absolute;
+            width: 100%; // mobile remove
+            bottom: 0px;
+            display: flex;
+            // flex-direction: column; // mobile add
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            @media (max-width: 768px) {
+                bottom: 64%;
+                left: 15px;
+                width: auto;
+                flex-direction: column;
+            }
+        }
+
+        .slick-dots li {
+            list-style: none;
+        }
+
+        .slick-dots li button {
+            font-size: 0px;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(207, 207, 207, 1);
+            border-radius: 50%;
+        }
+
+        .slick-dots li.slick-active button {
+            background-color: transparent;
+            border: 3px solid #ff3c2d;
+        }
+    }
+    &__slider {
+        position: relative;
+        padding: 50px;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        .slick-list {
+            overflow: hidden;
+
+            @media (max-width: 768px) {
+                overflow: hidden;
+            }
+        }
+
+        .slick-track {
+            display: flex;
+            min-width: 0px;
+            align-items: flex-start;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (max-width: 768px) {
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        min-width: 0px;
+        margin-right: 15px;
+        height: 100%;
+        &:last-of-type {
+            margin-right: 0px;
+        }
+        @media (max-width: 768px) {
+            margin-right: 0px;
+        }
+    }
+    &__img {
+        width: 100%;
+        // height: 80%;
+        @media (max-width: 768px) {
+        }
     }
     &__row {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 380px) {
+            padding-top: 15px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__description {
+        display: block;
+        width: 100%;
+        height: auto;
+        align-self: flex-start;
+        line-height: 4.3;
+        @media (max-width: 768px) {
+            line-height: 0;
+        }
     }
     &__name {
         font-size: 17px;
         text-transform: uppercase;
+        @media (max-width: 1300px) {
+            font-size: 13px;
+        }
+        @media (max-width: 900px) {
+            font-size: 10px;
+        }
+        @media (max-width: 768px) {
+            font-size: 17px;
+        }
+        @media (max-width: 500px) {
+            font-size: 14px;
+        }
     }
     &__text {
         font-size: 17px;
         display: block;
         position: relative;
         width: 100%;
+        height: 100%;
         padding: 20px 0px 0px 50px;
         max-width: 390px;
         line-height: 1.9;
         z-index: 3;
+
+        @media (max-width: 1300px) {
+            font-size: 13px;
+        }
+        @media (max-width: 900px) {
+            font-size: 12px;
+        }
+        @media (max-width: 768px) {
+            font-size: 17px;
+            max-width: 500px;
+        }
+        @media (max-width: 500px) {
+            font-size: 14px;
+        }
 
         &::before {
             position: absolute;
@@ -72,33 +183,11 @@
             width: 70px;
             height: 60px;
             z-index: -1;
+
+            @media (max-width: 1300px) {
+                width: 60px;
+                height: 50px;
+            }
         }
-    }
-
-    .slick-dots {
-        position: absolute;
-        width: 100%;
-        bottom: 8%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .slick-dots li {
-        list-style: none;
-    }
-
-    .slick-dots li button {
-        font-size: 0px;
-        width: 10px;
-        height: 10px;
-        background-color: rgba(207, 207, 207, 1);
-        border-radius: 50%;
-    }
-
-    .slick-dots li.slick-active button {
-        background-color: transparent;
-        border: 3px solid #ff3c2d;
     }
 }
