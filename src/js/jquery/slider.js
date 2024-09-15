@@ -29,6 +29,7 @@ $(document).ready(function () {
                     slidesToScroll: 1,
                     vertical: true,
                     verticalSwiping: true,
+                    swipe: true,
                 },
             },
         ],

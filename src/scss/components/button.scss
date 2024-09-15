@@ -28,6 +28,14 @@
 
     &__large_padding {
         padding: 10px 50px;
+        @media (max-width: 650px) {
+            padding: 8px 30px;
+            font-size: 14px;
+        }
+        @media (max-width: 480px) {
+            padding: 6px 20px;
+            font-size: 12px;
+        }
     }
     &__medium_padding {
         padding: 10px 30px;
