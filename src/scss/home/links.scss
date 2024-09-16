@@ -1,13 +1,51 @@
 .links {
+    width: 50%;
+    @media (max-width: 1000px) {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        border-right: 1px solid #626262;
+        padding-right: 12%;
+    }
+    @media (max-width: 768px) {
+        width: 60%;
+        padding-right: 7%;
+    }
+    @media (max-width: 650px) {
+        width: 40%;
+    }
     &__title {
         color: #626262;
         font-size: 18px;
+        @media (max-width: 1300px) {
+            font-size: 16px;
+        }
+        @media (max-width: 1000px) {
+            text-align: end;
+        }
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
     &__items {
         padding: 18px 0px 0px 0px;
         line-height: 2.3;
+        @media (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+    &__item {
     }
     &__link {
+        width: 100%;
         color: #fff;
+        @media (max-width: 1300px) {
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
     }
 }

@@ -1,18 +1,18 @@
 <div class="navigation">
-    <div class="navigation__column">
+    <div class="navigation__row">
         <div class="navigation__logo">
             <img src="../../img/footer/studio-logo.png" alt="" class="logo">
         </div>
-        @@include('studio-inc.html', {})
+        <div class="navigation__column">
+            @@include('links.html', {})
+            @@include('resources.html', {})
+        </div>
     </div>
-    <div class="navigation__column">
-        @@include('links.html', {})
-        @@include('contact.html', {})
-    </div>
-    <div class="navigation__column">
-        @@include('resources.html', {})
-    </div>
-    <div class="navigation__column">
+    <div class="navigation__row">
+        <div class="navigation__column">
+            @@include('studio-inc.html', {})
+            @@include('contact.html', {})
+        </div>
         <div class="navigation__links">
             <a href="" class="navigation__link">
                 Facebook
