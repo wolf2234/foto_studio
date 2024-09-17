@@ -1,13 +1,18 @@
 .employees {
+    width: 100%;
+    height: 100%;
     &__body {
         width: 100%;
-        display: block;
+        height: 100%;
         padding: 50px 0px;
         @media (max-width: 768px) {
             padding: 30px 15px 0px 15px;
         }
-        @media (max-width: 500px) {
+        @media (max-width: 550px) {
             padding: 20px 0px 0px 0px;
+        }
+        @media (max-width: 530px) {
+            padding: 10px 0px 0px 0px;
         }
     }
     &__head {
@@ -25,23 +30,44 @@
         position: relative;
         width: 100%;
         height: 100%;
+        padding: 30px;
+        @media (max-width: 430px) {
+            padding: 20px;
+        }
+        @media (max-width: 415px) {
+            padding: 14px;
+        }
+        @media (max-width: 400px) {
+            padding: 10px;
+        }
     }
     &__dots {
         .slick-dots {
             position: absolute;
-            width: 100%; // mobile remove
+            width: 100%;
             bottom: 0px;
             display: flex;
-            // flex-direction: column; // mobile add
             align-items: center;
             justify-content: center;
             gap: 10px;
 
             @media (max-width: 768px) {
-                bottom: 64%;
-                left: 15px;
+                display: inline-block;
+                top: 18px;
+                left: 8px;
                 width: auto;
-                flex-direction: column;
+            }
+            @media (max-width: 430px) {
+                top: 8px;
+                left: 2px;
+            }
+            @media (max-width: 415px) {
+                top: 3px;
+                left: -3px;
+            }
+            @media (max-width: 400px) {
+                top: 0px;
+                left: -5px;
             }
         }
 
@@ -66,11 +92,9 @@
         position: relative;
         padding: 50px;
         width: 100%;
-        height: 100%;
         z-index: 3;
         .slick-list {
             overflow: hidden;
-
             @media (max-width: 768px) {
                 overflow: hidden;
             }
@@ -78,6 +102,8 @@
 
         .slick-track {
             display: flex;
+            width: 100%;
+            height: 100%;
             min-width: 0px;
             align-items: flex-start;
 
@@ -85,26 +111,35 @@
                 flex-direction: column;
                 align-items: center;
             }
+            @media (max-width: 430px) {
+                align-items: stretch;
+            }
         }
         @media (max-width: 768px) {
+            padding: 0px;
         }
     }
     &__item {
+        position: relative;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        min-width: 0px;
         margin-right: 15px;
-        height: 100%;
+        border: 2px solid red;
         &:last-of-type {
             margin-right: 0px;
         }
         @media (max-width: 768px) {
             margin-right: 0px;
         }
+        @media (max-width: 390px) {
+            height: 100%;
+            min-height: 0px;
+        }
     }
     &__img {
         width: 100%;
-        // height: 80%;
+        height: 100%;
         @media (max-width: 768px) {
         }
     }
@@ -112,17 +147,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        @media (max-width: 380px) {
-            padding-top: 15px;
-            flex-direction: column;
-            align-items: flex-start;
-        }
     }
     &__description {
-        display: block;
         width: 100%;
-        height: auto;
         align-self: flex-start;
         line-height: 4.3;
         @media (max-width: 768px) {
