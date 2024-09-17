@@ -108,8 +108,6 @@
     &__column {
         width: 50%;
         @media (max-width: 1300px) {
-            // width: 40%;
-
             &:first-of-type {
                 width: 45%;
             }
