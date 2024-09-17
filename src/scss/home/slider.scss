@@ -71,12 +71,12 @@
         height: 70px;
     }
     .slick-arrow.slick-prev {
-        background: url("../img/main/services/slider/arrow-left.png") 0 0 / 100%
-            no-repeat;
+        background: url("../../img/main/services/slider/arrow-left.png") 0 0 /
+            100% no-repeat;
         z-index: 5;
     }
     .slick-arrow.slick-next {
-        background: url("../img/main/services/slider/arrow-right.png") 0 0 /
+        background: url("../../img/main/services/slider/arrow-right.png") 0 0 /
             100% no-repeat;
         z-index: 5;
     }
@@ -120,7 +120,7 @@
     .slick-arrow.slick-prev {
         width: 47%;
         left: 0px;
-        background-image: url("../img/main/services/slider/arrow-left.png");
+        background-image: url("../../img/main/services/slider/arrow-left.png");
         background-repeat: no-repeat;
         background-position: center;
         z-index: 5;
@@ -140,7 +140,7 @@
     .slick-arrow.slick-next {
         width: 47%;
         right: 0px;
-        background-image: url("../img/main/services/slider/arrow-right.png");
+        background-image: url("../../img/main/services/slider/arrow-right.png");
         background-repeat: no-repeat;
         background-position: center;
         z-index: 5;
